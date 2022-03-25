@@ -1,0 +1,20 @@
+# Python program to check
+# if a string is palindrome
+# or not
+ 
+x = input("Enter a String: ")
+ 
+w = ""
+for i in x:
+    w = i + w
+ 
+if (x == w):
+    print(f"The String " , x, "is Palidrome")
+else:
+    print(f"The String " , x, "is not Palidrome")
+
+
+
+output:
+Enter a String: naman
+The String  naman is Palidrome
