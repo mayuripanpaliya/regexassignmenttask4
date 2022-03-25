@@ -1,0 +1,27 @@
+num=int(input("Enter a six digit no: " ))
+num1=int(input("Enter a No for divisor: " ))
+x=num//10000
+a=x%num1
+
+x1=(num - x*10000)//1000
+b=x1%num1
+
+x2=(num - x*10000 - x1*1000)//100
+c=x2%num1
+
+x3=(num - x*10000 - x1*1000 - x2*100)//10
+d=x3%num1
+
+x4=num - x*10000 - x1*1000 - x2*100 -x3*10
+e=x4%num1
+
+print(f"The Divident is : " , num , "The Divisor is : ",num1, "And the Remainder is: ",a,b,c,d,e)
+
+
+
+
+
+output
+Enter a six digit no: 134578
+Enter a No for divisor: 2
+The Divident is :  134578 The Divisor is :  2 And the Remainder is:  1 0 1 1 0
